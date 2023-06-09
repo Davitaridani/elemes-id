@@ -1,0 +1,16 @@
+@import "./globals";
+@import "./variables";
+
+.sect-herro-banner {
+	background: url("../img/bg-herro.png") no-repeat center center;
+	height: 100vh;
+	background-size: cover;
+	.container {
+		.row {
+			h1 {
+				color: $darkArmy;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
