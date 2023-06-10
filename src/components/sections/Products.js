@@ -5,7 +5,6 @@ import { dataProducts } from "../../assets/constants/data";
 import Button from "../UI/Button";
 
 const Products = () => {
-  console.log("Data Products", dataProducts);
   return (
     <section className="sect__products">
       <Container>

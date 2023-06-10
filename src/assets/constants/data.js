@@ -83,6 +83,7 @@ export const dataProducts = [
     imgUrl: PizzaPaperoni,
     category: "Pizza",
     bgColor: "#E6F3F5",
+    delayAos: 100,
     icon: [
       <AiFillStar />,
       <AiFillStar />,
@@ -97,6 +98,7 @@ export const dataProducts = [
     imgUrl: PizzaMeat,
     category: "Pizza",
     bgColor: "#E6F3F5",
+    delayAos: 200,
     icon: [
       <AiFillStar />,
       <AiFillStar />,
@@ -111,6 +113,7 @@ export const dataProducts = [
     imgUrl: DonerKebab,
     category: "kebab",
     bgColor: "#EAEEFA",
+    delayAos: 300,
     icon: [
       <AiFillStar />,
       <AiFillStar />,
@@ -125,6 +128,7 @@ export const dataProducts = [
     imgUrl: SalmonRoll,
     category: "Salmon",
     bgColor: "#F9EEF3",
+    delayAos: 400,
     icon: [
       <AiFillStar />,
       <AiFillStar />,
@@ -139,6 +143,7 @@ export const dataProducts = [
     imgUrl: CupcakeChoco,
     category: "Cupcake",
     bgColor: "#F0FEEB",
+    delayAos: 100,
     icon: [
       <AiFillStar />,
       <AiFillStar />,
@@ -153,6 +158,7 @@ export const dataProducts = [
     imgUrl: DoughnutMilk,
     category: "Doughnut",
     bgColor: "#F3F7D9",
+    delayAos: 200,
     icon: [
       <AiFillStar />,
       <AiFillStar />,
@@ -167,6 +173,7 @@ export const dataProducts = [
     imgUrl: DoughnutUnicorn,
     category: "Doughnut",
     bgColor: "#F3F7D9",
+    delayAos: 300,
     icon: [
       <AiFillStar />,
       <AiFillStar />,
@@ -181,6 +188,7 @@ export const dataProducts = [
     imgUrl: KathiKebab,
     category: "Kebab",
     bgColor: "#EAEEFA",
+    delayAos: 400,
     icon: [
       <AiFillStar />,
       <AiFillStar />,

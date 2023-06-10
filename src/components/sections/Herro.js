@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
+import AOS from "aos";
 import Button from "../UI/Button";
 import iconBanner from "../../assets/img/icon-banner.png";
 
 const Herro = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="sect__hero">
       <Container>
@@ -38,7 +43,11 @@ const Herro = () => {
             </div>
           </Col>
           <Col md="6">
-            <div className="images__hero">
+            <div
+              className="images__hero"
+              data-aos="zoom-in"
+              data-aos-duration="2500"
+            >
               <img src={iconBanner} alt="images-hero" className="img-fluid" />
             </div>
           </Col>

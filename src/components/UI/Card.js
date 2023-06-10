@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import { Col } from "react-bootstrap";
 
 const Card = ({ data }) => {
-  const { title, imgUrl, category, bgColor, icon } = data;
+  const { title, imgUrl, category, bgColor, icon, delayAos } = data;
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
-      <Col md="3" className="block block__card">
+      <Col
+        md="3"
+        className="block block__card"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-offset="150"
+        data-aos-delay={delayAos}
+      >
         <div
           className="card border-0 card__product"
           style={{ backgroundColor: `${bgColor}` }}

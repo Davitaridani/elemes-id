@@ -18,7 +18,7 @@ const CarouselCard = () => {
         </div>
         <Swiper
           slidesPerView={5}
-          spaceBetween={30}
+          spaceBetween={10}
           navigation={true}
           modules={[Navigation]}
           className="mySwiper"
@@ -30,7 +30,7 @@ const CarouselCard = () => {
                 style={{ backgroundColor: `${item.bgColor}` }}
               >
                 <div class="card__header-carousel mx-auto">
-                  <img src={item.imgUrl} alt="" />
+                  <img src={item.imgUrl} alt="" className="animate__bounce" />
                 </div>
                 <div className="card__body-carousel">
                   <h5>{item.title}</h5>
