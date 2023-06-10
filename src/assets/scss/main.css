@@ -238,6 +238,9 @@ a {
     background-color: #fff;
     border: 1px solid #F8F8F8;
   }
+  .navbar .container .navbar-brand {
+    margin-right: 0 !important;
+  }
   .navbar .container .navbar-brand img {
     height: 36px !important;
     width: 150px !important;
@@ -373,7 +376,8 @@ a {
     margin-bottom: 25px;
   }
   .sect__hero .container .row .block__content-hero .title__hero h1 {
-    font-size: 48px;
+    font-size: 46px;
+    line-height: 60px;
   }
   .sect__hero .container .row .block__content-hero .description__hero p {
     font-size: 14px;

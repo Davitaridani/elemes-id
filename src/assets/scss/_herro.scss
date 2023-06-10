@@ -49,6 +49,7 @@
 		}
 	}
 }
+
 @include responsive(mobile) {
 	.sect__hero {
 		height: auto;
@@ -60,7 +61,8 @@
 					.title__hero {
 						margin-bottom: 25px;
 						h1 {
-							font-size: 48px;
+							font-size: 46px;
+							line-height: 60px;
 						}
 					}
 					.description__hero {
