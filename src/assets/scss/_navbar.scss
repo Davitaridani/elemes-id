@@ -1,5 +1,6 @@
 @import "globals";
 @import "variables";
+@import "breakpoint";
 
 .navbar-sticky {
 	width: 100%;
@@ -22,7 +23,7 @@
 	width: 100%;
 	.container { 
 		.navbar-brand {
-			a {
+			img {
 				width: 207px;
 				height: 50px;
 			}
@@ -57,3 +58,72 @@
 		}
 	}
 }
+
+
+
+@include responsive(mobile) {
+	// Navbar
+	.navbar {
+		height: 89px;
+		position: static ;
+		background-color: #fff;
+		border: 1px solid #F8F8F8;
+		.container { 
+			.navbar-brand {
+				img {
+					height: 36px !important;
+					width: 150px !important;
+				}
+			}
+			// .navbar-nav {
+			// 	display: flex;
+			// 	gap: 30px;
+			// 	.nav__item {
+			// 		.nav__links {
+			// 			font-size: 14px;
+			// 			font-weight: 500;
+			// 			position: relative;
+			// 			&:hover {
+			// 				color: $darkArmy;
+			// 				transition: .3s ease-in;
+			// 			}
+			// 			img {
+			// 				position: absolute;
+			// 				bottom: 17px;
+			// 				right: -15px;
+			// 			}
+			// 		}
+			// 	}
+			// }
+			.items__button-navbar {
+				button:nth-child(2) {
+					&:hover {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	.sect__navbar-footer {
+		border: 1px solid #F8F8F8;
+		height: 89px;
+		.container {
+			.items__hamburger {
+				button {
+					padding-top: 20px;
+					padding-bottom: 12px;
+					img {
+						width: 39px;
+						height: 39px;
+					}
+					p {
+						margin-bottom: 0;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+

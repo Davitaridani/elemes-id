@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 * {
   font-family: "Rubik", sans-serif;
 }
@@ -25,11 +26,11 @@ a {
 
 .container {
   max-width: 100% !important;
-  padding: 0 20px !important;
+  padding: 0 30px !important;
 }
 @media screen and (min-width: 1350px) {
   .container {
-    padding: 0 20px !important;
+    padding: 0 30px !important;
     max-width: 1350px !important;
   }
 }
@@ -92,11 +93,66 @@ a {
 
 .container {
   max-width: 100% !important;
-  padding: 0 20px !important;
+  padding: 0 30px !important;
 }
 @media screen and (min-width: 1350px) {
   .container {
-    padding: 0 20px !important;
+    padding: 0 30px !important;
+    max-width: 1350px !important;
+  }
+}
+
+::-moz-selection {
+  background-color: #8BAC3E;
+  color: #fff;
+}
+
+::selection {
+  background-color: #8BAC3E;
+  color: #fff;
+}
+
+.animate__bounce {
+  -webkit-animation: bounce 4s ease infinite;
+          animation: bounce 4s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+p {
+  color: #757575;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.container {
+  max-width: 100% !important;
+  padding: 0 30px !important;
+}
+@media screen and (min-width: 1350px) {
+  .container {
+    padding: 0 30px !important;
     max-width: 1350px !important;
   }
 }
@@ -148,7 +204,7 @@ a {
   z-index: 10;
   width: 100%;
 }
-.navbar .container .navbar-brand a {
+.navbar .container .navbar-brand img {
   width: 207px;
   height: 50px;
 }
@@ -175,6 +231,37 @@ a {
   color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .navbar {
+    height: 89px;
+    position: static;
+    background-color: #fff;
+    border: 1px solid #F8F8F8;
+  }
+  .navbar .container .navbar-brand img {
+    height: 36px !important;
+    width: 150px !important;
+  }
+  .navbar .container .items__button-navbar button:nth-child(2):hover {
+    font-size: 14px;
+  }
+  .sect__navbar-footer {
+    border: 1px solid #F8F8F8;
+    height: 89px;
+  }
+  .sect__navbar-footer .container .items__hamburger button {
+    padding-top: 20px;
+    padding-bottom: 12px;
+  }
+  .sect__navbar-footer .container .items__hamburger button img {
+    width: 39px;
+    height: 39px;
+  }
+  .sect__navbar-footer .container .items__hamburger button p {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+}
 * {
   font-family: "Rubik", sans-serif;
 }
@@ -195,11 +282,11 @@ a {
 
 .container {
   max-width: 100% !important;
-  padding: 0 20px !important;
+  padding: 0 30px !important;
 }
 @media screen and (min-width: 1350px) {
   .container {
-    padding: 0 20px !important;
+    padding: 0 30px !important;
     max-width: 1350px !important;
   }
 }
@@ -274,6 +361,30 @@ a {
   transition: 0.4s ease-in-out;
 }
 
+@media screen and (max-width: 767px) {
+  .sect__hero {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .sect__hero .container .row .block__content-hero {
+    width: auto;
+  }
+  .sect__hero .container .row .block__content-hero .title__hero {
+    margin-bottom: 25px;
+  }
+  .sect__hero .container .row .block__content-hero .title__hero h1 {
+    font-size: 48px;
+  }
+  .sect__hero .container .row .block__content-hero .description__hero p {
+    font-size: 14px;
+  }
+  .sect__hero .container .row .block__content-hero .items__button-hero button:nth-child(1) {
+    font-size: 14px;
+  }
+  .sect__hero .container .row .block__content-hero .items__button-hero button:nth-child(2) {
+    font-size: 14px;
+  }
+}
 * {
   font-family: "Rubik", sans-serif;
 }
@@ -294,11 +405,11 @@ a {
 
 .container {
   max-width: 100% !important;
-  padding: 0 20px !important;
+  padding: 0 30px !important;
 }
 @media screen and (min-width: 1350px) {
   .container {
-    padding: 0 20px !important;
+    padding: 0 30px !important;
     max-width: 1350px !important;
   }
 }
@@ -394,6 +505,29 @@ a {
   background-color: #8BAC3E;
 }
 
+@media screen and (max-width: 767px) {
+  .sect__carousel .container {
+    padding: 0 !important;
+  }
+  .sect__carousel .container .title__carousel {
+    margin: 43px 0 19px;
+    padding: 0 30px;
+  }
+  .sect__carousel .container .title__carousel h1 {
+    line-height: 30px;
+    font-size: 24px;
+  }
+  .sect__carousel .container .swiper {
+    margin-bottom: 40px;
+  }
+  .sect__carousel .container .swiper .card__carousel .card__header-carousel img {
+    height: 47px;
+  }
+  .sect__carousel .container .swiper .swiper-button-prev,
+.sect__carousel .container .swiper .swiper-button-next {
+    display: none;
+  }
+}
 * {
   font-family: "Rubik", sans-serif;
 }
@@ -414,11 +548,11 @@ a {
 
 .container {
   max-width: 100% !important;
-  padding: 0 20px !important;
+  padding: 0 30px !important;
 }
 @media screen and (min-width: 1350px) {
   .container {
-    padding: 0 20px !important;
+    padding: 0 30px !important;
     max-width: 1350px !important;
   }
 }
@@ -501,6 +635,24 @@ a {
   color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .sect__products .container {
+    margin-bottom: 117px;
+  }
+  .sect__products .container .title__product {
+    margin-bottom: 48px;
+  }
+  .sect__products .container .title__product h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .sect__products .container .row .block__card {
+    padding: 0 10px;
+  }
+  .sect__products .container .row .btn {
+    display: none;
+  }
+}
 * {
   font-family: "Rubik", sans-serif;
 }
@@ -521,11 +673,11 @@ a {
 
 .container {
   max-width: 100% !important;
-  padding: 0 20px !important;
+  padding: 0 30px !important;
 }
 @media screen and (min-width: 1350px) {
   .container {
-    padding: 0 20px !important;
+    padding: 0 30px !important;
     max-width: 1350px !important;
   }
 }
@@ -586,11 +738,11 @@ a {
 
 .container {
   max-width: 100% !important;
-  padding: 0 20px !important;
+  padding: 0 30px !important;
 }
 @media screen and (min-width: 1350px) {
   .container {
-    padding: 0 20px !important;
+    padding: 0 30px !important;
     max-width: 1350px !important;
   }
 }
@@ -727,4 +879,10 @@ a {
   margin-bottom: 0;
   padding: 48px 0 32px 0;
   font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

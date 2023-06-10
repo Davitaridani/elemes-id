@@ -1,5 +1,6 @@
 @import "globals";
 @import "variables";
+@import "breakpoint";
 
 .sect__products {
 	.container {
@@ -55,6 +56,29 @@
 				&:hover {
 					background-color: $darkArmy;
 					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.sect__products {
+		.container {
+			margin-bottom: 117px;
+			.title__product {
+				margin-bottom: 48px;
+				h1 {
+					font-size: 24px;
+					line-height: 30px;
+				}
+			}
+			.row {
+				.block__card {
+					padding: 0 10px;
+				}
+				.btn {
+					display: none;
 				}
 			}
 		}

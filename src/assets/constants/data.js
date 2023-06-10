@@ -16,7 +16,7 @@ import PizzaPaperoni from "../img/products/PizzaPaperoni.png";
 import KathiKebab from "../img/products/KathiKebab.png";
 
 import imgHot from "../img/hot.png";
-
+import listHamburger from "../img/menu-hamburger.png";
 import star from "../img/icons/star.png";
 import outlineStar from "../img/icons/star.png";
 
@@ -69,10 +69,10 @@ export const categoryProducts = [
   },
   {
     id: 6,
-    imgUrl: doughnut,
+    imgUrl: kebab,
     bgColor: "#F0FEEB",
-    title: "Doughnut",
-    amount: "22 Items",
+    title: "Kebab",
+    amount: "12 Items",
   },
 ];
 
@@ -217,5 +217,20 @@ export const linksFooter = [
       { link: "FAQ" },
       { link: "Report Problem" },
     ],
+  },
+];
+
+export const dataListHamburger = [
+  {
+    imgUrl: listHamburger,
+    title: "Home",
+  },
+  {
+    imgUrl: listHamburger,
+    title: "Promotions",
+  },
+  {
+    imgUrl: listHamburger,
+    title: "Others",
   },
 ];

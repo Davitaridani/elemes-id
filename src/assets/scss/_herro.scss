@@ -1,5 +1,6 @@
 @import "./globals";
 @import "./variables";
+@import "breakpoint";
 
 .sect__hero {
 	background: url("../img/bg-herro.png") no-repeat center center;
@@ -41,6 +42,38 @@
 							color: #fff;
 							background-color: $darkArmy;
 							transition: .4s ease-in-out;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include responsive(mobile) {
+	.sect__hero {
+		height: auto;
+		padding-bottom: 50px;
+		.container {
+			.row {
+				.block__content-hero {
+					width: auto;
+					.title__hero {
+						margin-bottom: 25px;
+						h1 {
+							font-size: 48px;
+						}
+					}
+					.description__hero {
+						p {
+							font-size: 14px;
+						}
+					}
+					.items__button-hero {
+						button:nth-child(1) {
+							font-size: 14px;
+						}
+						button:nth-child(2) {
+							font-size: 14px;
 						}
 					}
 				}

@@ -47,7 +47,10 @@ const NavbarCompt = () => {
           </ul>
         </div>
         <div className="items__button-navbar d-flex align-items-center">
-          <Button content="Masuk" style="bg-transparent text-dark" />
+          <Button
+            content="Masuk"
+            style="bg-transparent text-dark d-none d-md-block"
+          />
           <Button content="Daftar Sekarang" style="ms-2" />
         </div>
       </Container>

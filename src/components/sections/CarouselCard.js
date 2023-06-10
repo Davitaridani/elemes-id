@@ -20,6 +20,12 @@ const CarouselCard = () => {
           slidesPerView={5}
           spaceBetween={10}
           navigation={true}
+          breakpoints={{
+            "@0.00": {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+          }}
           modules={[Navigation]}
           className="mySwiper"
         >

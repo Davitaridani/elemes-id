@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import AOS from "aos";
 import Button from "../UI/Button";
-import iconBanner from "../../assets/img/icon-banner.png";
+import imageBanner from "../../assets/img/images-banner.png";
+import imageBannerMobile from "../../assets/img/images-banner-mobile.png";
 
 const Herro = () => {
   useEffect(() => {
@@ -30,6 +31,13 @@ const Herro = () => {
                 </h1>
               </div>
               <div class="description__hero">
+                <img
+                  src={imageBannerMobile}
+                  alt="imgaes-herro"
+                  className="img-fluid d-block d-md-none"
+                  data-aos="zoom-in"
+                  data-aos-duration="2500"
+                />
                 <p>
                   I would think that conserving our natural resources should be
                   a conservative position: Not to waste food, and not to throw
@@ -48,7 +56,11 @@ const Herro = () => {
               data-aos="zoom-in"
               data-aos-duration="2500"
             >
-              <img src={iconBanner} alt="images-hero" className="img-fluid" />
+              <img
+                src={imageBanner}
+                alt="images-hero"
+                className="img-fluid d-none d-md-block"
+              />
             </div>
           </Col>
         </Row>

@@ -1,5 +1,6 @@
 @import "globals";
 @import "variables";
+@import "breakpoint";
 
 .sect__carousel {
 	.container { 
@@ -71,6 +72,36 @@
 					align-items: center;
 					border-radius: 50%;
 					background-color: $darkArmy;
+				}
+			}
+		}
+	}
+}
+
+@include responsive(mobile)  {
+	.sect__carousel {
+		.container { 
+			padding: 0 !important;
+			.title__carousel {
+				margin: 43px 0 19px ;
+				padding: 0 30px;
+				h1 {
+					line-height: 30px;
+					font-size: 24px;
+				}
+			}
+			.swiper {
+				margin-bottom: 40px;
+					.card__carousel {
+						.card__header-carousel {
+						img {
+							height: 47px;
+						}
+					}
+				}
+				.swiper-button-prev ,
+				.swiper-button-next {
+					display: none;
 				}
 			}
 		}

@@ -1,5 +1,6 @@
 @import "globals";
 @import "variables";
+@import "breakpoint";
 
 .footer {
 	.container {
@@ -116,5 +117,11 @@
 				font-size: 12px;
 			}
 		}
+	}
+}
+
+@include responsive(mobile) {
+	.footer { 
+		display: none;
 	}
 }
