@@ -20,6 +20,12 @@
 	right: 0;
 	width: 100%;
 	.container { 
+		.navbar-brand {
+			a {
+				width: 207px;
+				height: 50px;
+			}
+		}
 		.navbar-nav {
 			display: flex;
 			gap: 30px;
@@ -28,11 +34,23 @@
 					font-size: 14px;
 					font-weight: 500;
 					position: relative;
+					&:hover {
+						color: $darkArmy;
+						transition: .3s ease-in;
+					}
 					img {
 						position: absolute;
 						bottom: 17px;
 						right: -15px;
 					}
+				}
+			}
+		}
+		.items__button-navbar {
+			button:nth-child(2) {
+				&:hover {
+					background-color: $darkArmy !important;
+					color: #fff;
 				}
 			}
 		}

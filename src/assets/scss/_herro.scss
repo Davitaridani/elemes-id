@@ -1,16 +1,51 @@
 @import "./globals";
 @import "./variables";
 
-.sect-herro-banner {
+.sect__hero {
 	background: url("../img/bg-herro.png") no-repeat center center;
 	height: 100vh;
 	background-size: cover;
 	.container {
 		.row {
-			h1 {
-				color: $darkArmy;
-				margin-bottom: 10px;
+			padding-top: 30px;
+			.block__content-hero {
+				width: 482px;
+				.title__hero {
+					margin-bottom: 25px;
+					h1 {
+						font-size: 64px;
+						line-height: 64px;
+						color: $darkArmy;
+						height: 128px;
+					}
+				}
+				.description__hero {
+					margin-bottom: 32px;
+					p {
+						font-size: 18px;
+						font-weight: 400;
+					}
+				}
+				.items__button-hero {
+					button:nth-child(1) {
+						box-shadow: 0px 8px 32px 0px #666BE259;
+						&:hover {
+							background-color: #F2F2F2;
+							transition: .4s ease-in-out;
+						}
+					}
+					button:nth-child(2) {
+						background-color: #F2F2F2;
+						color: #333;
+						&:hover {
+							color: #fff;
+							background-color: $darkArmy;
+							transition: .4s ease-in-out;
+						}
+					}
+				}
 			}
 		}
 	}
 }
+

@@ -1,15 +1,15 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import ListingProduct from "../ListingProduct";
-import { dataProducts } from "../../assets/conctans/data";
+import { dataProducts } from "../../assets/constants/data";
 import Button from "../UI/Button";
 
 const Products = () => {
   console.log("Data Products", dataProducts);
   return (
-    <section className="sect-producs">
+    <section className="sect__products">
       <Container>
-        <div className="title">
+        <div className="title__product">
           <h1>
             Browser Our Trending
             <br />
@@ -18,7 +18,7 @@ const Products = () => {
         </div>
         <Row>
           <ListingProduct data={dataProducts} />
-          {/* <Button content="ALL Receipt" /> */}
+          <Button content="ALL Receipt" style="mx-auto" />
         </Row>
       </Container>
     </section>

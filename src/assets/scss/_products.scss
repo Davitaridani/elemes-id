@@ -1,0 +1,62 @@
+@import "globals";
+@import "variables";
+
+.sect__products {
+	.container {
+		margin-bottom: 250px;
+		.title__product {
+			margin-bottom: 55px;
+			h1 {
+				font-size: 38px;
+				line-height: 50px;
+				color: #333;
+				span {
+					color: $darkArmy;
+				}
+			}
+		}
+		.row {
+			.block__card {
+				padding: 0 10px;
+				.card__product {
+					padding: 25px;
+					box-shadow: 0px 11px 39px 0px #00000012;
+					margin-bottom: 30px;
+					.card__header {
+						margin-bottom: 19px;
+						img {
+							border-radius: 6px;
+							height: 120px;
+							width: 118px;
+						}
+					}
+					.card__body {
+						h3 {
+							font-size: 26px;
+						}
+						p {
+							font-size: 18px;
+							margin-bottom: 5px;
+							color: $darkArmy;
+							font-weight: 500;
+						}
+						.card__body-icon {
+							span {
+								color: #FF8412;
+							}
+						}
+					}
+				}
+			}
+			.btn {
+				margin-top: 50px;
+				width: 160px;
+				height: 50px;
+				&:hover {
+					background-color: $darkArmy;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+@import "globals";
+@import "variables";
+
+.btn { 
+	border: 0 !important;
+	background-color: $darkArmy;
+	border-radius: 100px;
+	padding: 10px 18px;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+}

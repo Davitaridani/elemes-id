@@ -1,9 +1,9 @@
 // icon category
-import cupcake from "../img/icon/cupcake.png";
-import doughnut from "../img/icon/doughnut.png";
-import kebab from "../img/icon/kebab.png";
-import pizza from "../img/icon/pizza.png";
-import salmon from "../img/icon/salmon.png";
+import cupcake from "../img/icons/cupcake.png";
+import doughnut from "../img/icons/doughnut.png";
+import kebab from "../img/icons/kebab.png";
+import pizza from "../img/icons/pizza.png";
+import salmon from "../img/icons/salmon.png";
 
 // iamges products
 import CupcakeChoco from "../img/products/CupcakeChoco.png";
@@ -15,7 +15,21 @@ import PizzaMeat from "../img/products/PizzaMeat.png";
 import PizzaPaperoni from "../img/products/PizzaPaperoni.png";
 import KathiKebab from "../img/products/KathiKebab.png";
 
+import imgHot from "../img/hot.png";
+
+import star from "../img/icons/star.png";
+import outlineStar from "../img/icons/star.png";
+
+// Icon
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+
+export const navLinks = [
+  { title: "Home" },
+  { title: "About" },
+  { title: "Promotions", badge: imgHot },
+  { title: "Blogs" },
+  { title: "Contact Us" },
+];
 
 export const categoryProducts = [
   {
@@ -53,10 +67,13 @@ export const categoryProducts = [
     title: "Doughnut",
     amount: "22 Items",
   },
-  // {
-  //   id: 6,
-  //   bgColor: "#F3F7D9",
-  // },
+  {
+    id: 6,
+    imgUrl: doughnut,
+    bgColor: "#F0FEEB",
+    title: "Doughnut",
+    amount: "22 Items",
+  },
 ];
 
 export const dataProducts = [
@@ -193,12 +210,4 @@ export const linksFooter = [
       { link: "Report Problem" },
     ],
   },
-];
-
-export const navLinks = [
-  { title: "Home" },
-  { title: "About" },
-  { title: "Promotions" },
-  { title: "Blogs" },
-  { title: "Contact Us" },
 ];

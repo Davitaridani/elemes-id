@@ -1,14 +1,17 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper";
 import { Container } from "react-bootstrap";
-import { categoryProducts } from "../../assets/conctans/data";
+import { categoryProducts } from "../../assets/constants/data";
 
-const CarouselCategory = () => {
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+
+const CarouselCard = () => {
   return (
-    <section className="sect-carousel">
+    <section className="sect__carousel">
       <Container>
-        <div className="title">
+        <div className="title__carousel">
           <h1>
             Browser Our Category <br /> <span>Receipt</span>
           </h1>
@@ -16,21 +19,20 @@ const CarouselCategory = () => {
         <Swiper
           slidesPerView={5}
           spaceBetween={30}
-          freeMode={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[FreeMode, Pagination]}
+          navigation={true}
+          modules={[Navigation]}
           className="mySwiper"
         >
           {categoryProducts?.map((item) => (
             <SwiperSlide key={item.id}>
               <div
-                className="card-category"
+                className="card text-center card__carousel"
                 style={{ backgroundColor: `${item.bgColor}` }}
               >
-                <img src={item.imgUrl} alt="" />
-                <div class="text">
+                <div class="card__header-carousel mx-auto">
+                  <img src={item.imgUrl} alt="" />
+                </div>
+                <div className="card__body-carousel">
                   <h5>{item.title}</h5>
                   <p>{item.amount}</p>
                 </div>
@@ -43,4 +45,4 @@ const CarouselCategory = () => {
   );
 };
 
-export default CarouselCategory;
+export default CarouselCard;
