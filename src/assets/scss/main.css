@@ -861,7 +861,7 @@ a {
 .block__btnToTOp .item__btnToTop {
   position: fixed;
   bottom: 30px;
-  right: 9%;
+  right: 5%;
   z-index: 999;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #8BAC3E;
