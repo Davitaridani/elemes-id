@@ -21,12 +21,10 @@
 			.card__carousel {
 				border: 0;
 				padding: 30px;
-				margin-bottom: 140px;
+				margin-bottom: 110px;
 				&:hover {
 					background-image: url("../img/bg-card.png");
 					transition: .3s ease-in-out;
-					// height: 210px;
-					// transform: scale3d(2);
 				}
 				.card__header-carousel {
 					img {

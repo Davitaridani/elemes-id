@@ -494,7 +494,7 @@ a {
 .sect__carousel .container .swiper .card__carousel {
   border: 0;
   padding: 30px;
-  margin-bottom: 140px;
+  margin-bottom: 110px;
 }
 .sect__carousel .container .swiper .card__carousel:hover {
   background-image: url("../img/bg-card.png");
