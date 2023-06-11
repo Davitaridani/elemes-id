@@ -32,7 +32,7 @@ const Card = ({ data }) => {
             <div className="d-flex align-items-center card__body-icon">
               {icon.map((item, index) => (
                 <div className="icon-star" key={index}>
-                  <span>{item}</span>
+                  <img src={item.star} alt="star" />
                 </div>
               ))}
             </div>

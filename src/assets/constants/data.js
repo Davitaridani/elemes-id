@@ -17,11 +17,211 @@ import KathiKebab from "../img/products/KathiKebab.png";
 
 import imgHot from "../img/hot.png";
 import listHamburger from "../img/menu-hamburger.png";
-import star from "../img/icons/star.png";
-import outlineStar from "../img/icons/star.png";
+import fullstar from "../img/icons/star.png";
+import outlineStar from "../img/icons/outlineStar.png";
 
-// Icon
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+export const dataProducts = [
+  {
+    id: 1,
+    title: "Pizza Paperoni",
+    imgUrl: PizzaPaperoni,
+    category: "Pizza",
+    bgColor: "#E6F3F5",
+    delayAos: 100,
+    icon: [
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: outlineStar,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Pizza Meat",
+    imgUrl: PizzaMeat,
+    category: "Pizza",
+    bgColor: "#E6F3F5",
+    delayAos: 200,
+    icon: [
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: outlineStar,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Doner Kebab",
+    imgUrl: DonerKebab,
+    category: "kebab",
+    bgColor: "#EAEEFA",
+    delayAos: 300,
+    icon: [
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: outlineStar,
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Salmon Roll",
+    imgUrl: SalmonRoll,
+    category: "Salmon",
+    bgColor: "#F9EEF3",
+    delayAos: 400,
+    icon: [
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: outlineStar,
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Cupcake Choco",
+    imgUrl: CupcakeChoco,
+    category: "Cupcake",
+    bgColor: "#F0FEEB",
+    delayAos: 100,
+    icon: [
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: outlineStar,
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "Doughnut Milk",
+    imgUrl: DoughnutMilk,
+    category: "Doughnut",
+    bgColor: "#F3F7D9",
+    delayAos: 200,
+    icon: [
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: outlineStar,
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: "Doughnut Unicorn",
+    imgUrl: DoughnutUnicorn,
+    category: "Doughnut",
+    bgColor: "#F3F7D9",
+    delayAos: 300,
+    icon: [
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: outlineStar,
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: "Kathi Kebab",
+    imgUrl: KathiKebab,
+    category: "Kebab",
+    bgColor: "#EAEEFA",
+    delayAos: 400,
+    icon: [
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: fullstar,
+      },
+      {
+        star: outlineStar,
+      },
+    ],
+  },
+];
 
 export const navLinks = [
   { title: "Home" },
@@ -73,129 +273,6 @@ export const categoryProducts = [
     bgColor: "#F0FEEB",
     title: "Kebab",
     amount: "12 Items",
-  },
-];
-
-export const dataProducts = [
-  {
-    id: 1,
-    title: "Pizza Paperoni",
-    imgUrl: PizzaPaperoni,
-    category: "Pizza",
-    bgColor: "#E6F3F5",
-    delayAos: 100,
-    icon: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-    ],
-  },
-  {
-    id: 2,
-    title: "Pizza Meat",
-    imgUrl: PizzaMeat,
-    category: "Pizza",
-    bgColor: "#E6F3F5",
-    delayAos: 200,
-    icon: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-      <AiOutlineStar />,
-    ],
-  },
-  {
-    id: 3,
-    title: "Doner Kebab",
-    imgUrl: DonerKebab,
-    category: "kebab",
-    bgColor: "#EAEEFA",
-    delayAos: 300,
-    icon: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-    ],
-  },
-  {
-    id: 4,
-    title: "Salmon Roll",
-    imgUrl: SalmonRoll,
-    category: "Salmon",
-    bgColor: "#F9EEF3",
-    delayAos: 400,
-    icon: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-    ],
-  },
-  {
-    id: 5,
-    title: "Cupcake Choco",
-    imgUrl: CupcakeChoco,
-    category: "Cupcake",
-    bgColor: "#F0FEEB",
-    delayAos: 100,
-    icon: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-    ],
-  },
-  {
-    id: 6,
-    title: "Doughnut Milk",
-    imgUrl: DoughnutMilk,
-    category: "Doughnut",
-    bgColor: "#F3F7D9",
-    delayAos: 200,
-    icon: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-    ],
-  },
-  {
-    id: 7,
-    title: "Doughnut Unicorn",
-    imgUrl: DoughnutUnicorn,
-    category: "Doughnut",
-    bgColor: "#F3F7D9",
-    delayAos: 300,
-    icon: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-    ],
-  },
-  {
-    id: 8,
-    title: "Kathi Kebab",
-    imgUrl: KathiKebab,
-    category: "Kebab",
-    bgColor: "#EAEEFA",
-    delayAos: 400,
-    icon: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-    ],
   },
 ];
 

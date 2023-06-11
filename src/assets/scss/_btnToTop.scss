@@ -1,0 +1,43 @@
+@import "globals";
+@import "variables";
+@import "breakpoint";
+
+.block__btnToTOp {
+		position: relative;
+		.item__btnToTop {
+			position: fixed;
+			bottom: 30px;
+			right: 9%;
+			z-index: 999;
+			box-shadow: 0 0 6px rgb(0 0 0 / 0.3);
+			background-color: $darkArmy;
+			height: 38px;
+			width: 38px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			span {
+				color: #fff;
+				font-size: 25px;
+				line-height: 0;
+			}
+	}
+}
+
+@include responsive(mobile) {
+	.block__btnToTOp {
+		position: relative;
+		.item__btnToTop {
+			position: fixed;
+			bottom: 30px;
+			right: 5%;
+			z-index: 999;
+			height: 38px;
+			width: 38px;
+			span {
+				font-size: 25px;
+			}
+		}
+	}
+}

@@ -6,6 +6,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
 import Input from "../../UI/Input";
+import ScrollToTop from "../../UI/ScrollToTop";
 
 const Footer = () => {
   const iconContact = [
@@ -80,6 +81,8 @@ const Footer = () => {
         <div className="block__copyright text-center text-uppercase">
           <p>© 2021 Elemes id. All rights reserved</p>
         </div>
+
+        <ScrollToTop />
       </Container>
     </footer>
   );

@@ -41,3 +41,26 @@ a {
 	40% {transform: translateY(-10px);}
 	60% {transform: translateY(-10px);}
 }
+
+.animate__shake {
+  animation: shake 10s ease-in-out infinite;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(8px);
+  }
+}

@@ -25,6 +25,18 @@ const CarouselCard = () => {
               slidesPerView: 2,
               spaceBetween: 10,
             },
+            "@0.75": {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            "@1.00": {
+              slidesPerView: 5,
+              spaceBetween: 10,
+            },
+            "@1.50": {
+              slidesPerView: 5,
+              spaceBetween: 10,
+            },
           }}
           modules={[Navigation]}
           className="mySwiper"

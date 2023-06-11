@@ -4,6 +4,7 @@
 
 .sect__carousel {
 	.container { 
+		margin-bottom: 80px;
 		.title__carousel {
 			margin: 45px 0 32px ;
 			h1 {
@@ -20,7 +21,7 @@
 			.card__carousel {
 				border: 0;
 				padding: 30px;
-				margin-bottom: 46px;
+				margin-bottom: 100px;
 				.card__header-carousel {
 					img {
 						width: 47px;
@@ -45,33 +46,28 @@
 				right: 25px !important;
 				top: 80% !important;
 				width: auto !important;
-				transform: translate(44%, 50%);
+				transform: translate(36%, 50%);
 				&::after {
+					content:  url("../img/arrow-prev.png");
 					width: 33px;
-					content: "previous";
-					height: 33px;
-					font-size: 19px;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					border-radius: 50%;
-					background-color: $darkArmy;
 				}
 			} 
 			.swiper-button-next {
 				right: 25px !important;
 				top: 80% !important;
 				width: auto !important;
-				transform: translate(44%, 50%);
+				transform: translate(-100%, 50%);
 				&::after {
+					content:  url("../img/arrow-next.png");
 					width: 33px;
-					height: 33px;
-					font-size: 19px;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					border-radius: 50%;
-					background-color: $darkArmy;
 				}
 			}
 		}
