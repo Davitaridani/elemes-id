@@ -55,13 +55,14 @@
 		height: auto;
 		padding-bottom: 50px;
 		.container {
+			padding: 0 25px !important ;
 			.row {
 				.block__content-hero {
 					width: auto;
 					.title__hero {
 						margin-bottom: 25px;
 						h1 {
-							font-size: 46px;
+							font-size: 40px;
 							line-height: 60px;
 						}
 					}

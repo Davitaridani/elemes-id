@@ -454,6 +454,9 @@ a {
     height: auto;
     padding-bottom: 50px;
   }
+  .sect__hero .container {
+    padding: 0 25px !important;
+  }
   .sect__hero .container .row .block__content-hero {
     width: auto;
   }
@@ -461,7 +464,7 @@ a {
     margin-bottom: 25px;
   }
   .sect__hero .container .row .block__content-hero .title__hero h1 {
-    font-size: 46px;
+    font-size: 40px;
     line-height: 60px;
   }
   .sect__hero .container .row .block__content-hero .description__hero p {
