@@ -64,7 +64,7 @@ export const dataProducts = [
         star: fullstar,
       },
       {
-        star: fullstar,
+        star: outlineStar,
       },
       {
         star: outlineStar,
@@ -92,7 +92,7 @@ export const dataProducts = [
         star: fullstar,
       },
       {
-        star: outlineStar,
+        star: fullstar,
       },
     ],
   },
@@ -142,7 +142,7 @@ export const dataProducts = [
         star: fullstar,
       },
       {
-        star: outlineStar,
+        star: fullstar,
       },
     ],
   },
