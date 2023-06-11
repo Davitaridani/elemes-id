@@ -494,7 +494,11 @@ a {
 .sect__carousel .container .swiper .card__carousel {
   border: 0;
   padding: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
+}
+.sect__carousel .container .swiper .card__carousel:hover {
+  background-image: url("../img/bg-card.png");
+  transition: 0.3s ease-in-out;
 }
 .sect__carousel .container .swiper .card__carousel .card__header-carousel img {
   width: 47px;
