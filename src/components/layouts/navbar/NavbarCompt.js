@@ -28,7 +28,7 @@ const NavbarCompt = () => {
   return (
     <nav className="navbar navbar-expand-lg" ref={navRef}>
       <Container>
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/#">
           <img src={logo} alt="logo-brand" />
         </a>
         <div
@@ -38,7 +38,7 @@ const NavbarCompt = () => {
           <ul className="navbar-nav ">
             {navLinks?.map((item, index) => (
               <li className="nav__item" key={index}>
-                <a className="nav__links d-flex" href="#">
+                <a className="nav__links d-flex" href="/#">
                   {item.title}
                   <img src={item.badge} alt="" />
                 </a>
@@ -49,9 +49,9 @@ const NavbarCompt = () => {
         <div className="items__button-navbar d-flex align-items-center">
           <Button
             content="Masuk"
-            style="bg-transparent text-dark d-none d-md-block"
+            styling="bg-transparent text-dark d-none d-md-block"
           />
-          <Button content="Daftar Sekarang" style="ms-2" />
+          <Button content="Daftar Sekarang" styling="ms-2" />
         </div>
       </Container>
     </nav>

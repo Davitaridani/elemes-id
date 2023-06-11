@@ -47,7 +47,7 @@ const CarouselCard = () => {
                 className="card text-center card__carousel"
                 style={{ backgroundColor: `${item.bgColor}` }}
               >
-                <div class="card__header-carousel mx-auto">
+                <div className="card__header-carousel mx-auto">
                   <img src={item.imgUrl} alt="" className="animate__bounce" />
                 </div>
                 <div className="card__body-carousel">

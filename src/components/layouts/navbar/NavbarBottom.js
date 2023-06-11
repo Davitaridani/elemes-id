@@ -6,7 +6,7 @@ const NavbarBottom = () => {
   return (
     <section className="sect__navbar-footer d-block d-md-none">
       <Container>
-        <div class="d-flex justify-content-between">
+        <div className="d-flex justify-content-between">
           {dataListHamburger?.map((item, index) => (
             <div className="items__hamburger " key={index}>
               <button className="border-0  bg-transparent">

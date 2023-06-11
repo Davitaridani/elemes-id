@@ -299,12 +299,20 @@ a {
     background-color: #fff;
     border: 1px solid #F8F8F8;
   }
+  .navbar .container {
+    padding: 0 25px !important;
+  }
   .navbar .container .navbar-brand {
     margin-right: 0 !important;
   }
   .navbar .container .navbar-brand img {
-    height: 36px !important;
-    width: 150px !important;
+    height: 35px !important;
+    width: 135px !important;
+  }
+  .navbar .container .items__button-navbar button:nth-child(2) {
+    margin-left: 0 !important;
+    font-size: 13px;
+    padding: 10px 15px;
   }
   .navbar .container .items__button-navbar button:nth-child(2):hover {
     font-size: 14px;
@@ -314,7 +322,7 @@ a {
     height: 89px;
   }
   .sect__navbar-footer .container .items__hamburger button {
-    padding-top: 20px;
+    padding-top: 12px;
     padding-bottom: 12px;
   }
   .sect__navbar-footer .container .items__hamburger button img {
@@ -748,7 +756,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .sect__products .container {
-    margin-bottom: 117px;
+    margin-bottom: 100px;
   }
   .sect__products .container .title__product {
     margin-bottom: 48px;
@@ -945,7 +953,7 @@ a {
   }
   .block__btnToTOp .item__btnToTop {
     position: fixed;
-    bottom: 30px;
+    bottom: -30px;
     right: 5%;
     z-index: 999;
     height: 38px;

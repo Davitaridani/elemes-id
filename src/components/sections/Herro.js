@@ -17,7 +17,7 @@ const Herro = () => {
         <Row>
           <Col md="6" className="d-flex align-items-center">
             <div className="block__content-hero">
-              <div class="title__hero">
+              <div className="title__hero">
                 <h1>
                   <Typewriter
                     options={{
@@ -30,7 +30,7 @@ const Herro = () => {
                   />
                 </h1>
               </div>
-              <div class="description__hero">
+              <div className="description__hero">
                 <img
                   src={imageBannerMobile}
                   alt="imgaes-herro"

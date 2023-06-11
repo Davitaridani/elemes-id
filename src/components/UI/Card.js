@@ -23,7 +23,7 @@ const Card = ({ data }) => {
           className="card border-0 card__product"
           style={{ backgroundColor: `${bgColor}` }}
         >
-          <div class="card__header">
+          <div className="card__header">
             <img src={imgUrl} alt="product" />
           </div>
           <div className="card__body">

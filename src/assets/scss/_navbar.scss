@@ -60,22 +60,26 @@
 }
 
 @include responsive(mobile) {
-	// Navbar
+
 	.navbar {
 		height: 89px;
 		position: static ;
 		background-color: #fff;
 		border: 1px solid #F8F8F8;
 		.container { 
+			padding: 0 25px !important;
 			.navbar-brand {
 				margin-right: 0 !important;
 				img {
-					height: 36px !important;
-					width: 150px !important;
+					height: 35px !important;
+					width: 135px !important;
 				}
 			}
 			.items__button-navbar {
 				button:nth-child(2) {
+					margin-left: 0 !important;
+					font-size: 13px;
+					padding: 10px 15px;
 					&:hover {
 						font-size: 14px;
 					}
@@ -90,7 +94,7 @@
 		.container {
 			.items__hamburger {
 				button {
-					padding-top: 20px;
+					padding-top: 12px;
 					padding-bottom: 12px;
 					img {
 						width: 39px;

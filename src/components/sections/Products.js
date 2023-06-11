@@ -17,7 +17,7 @@ const Products = () => {
         </div>
         <Row>
           <ListingProduct data={dataProducts} />
-          <Button content="ALL Receipt" style="mx-auto" />
+          <Button content="ALL Receipt" styling="mx-auto" />
         </Row>
       </Container>
     </section>

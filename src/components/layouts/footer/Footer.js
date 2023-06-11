@@ -14,6 +14,7 @@ const Footer = () => {
     { icon: <FiPhone /> },
     { icon: <AiOutlineInstagram /> },
   ];
+
   return (
     <footer className="footer">
       <Container>
@@ -29,23 +30,26 @@ const Footer = () => {
                 Daerah Khusus Ibukota Jakarta 12950
               </p>
               <div className="d-flex  block__footer-icons">
-                {iconContact?.map((item) => (
-                  <div className="icon d-flex justify-content-center align-items-center">
-                    <a href="#">{item.icon}</a>
+                {iconContact?.map((item, index) => (
+                  <div
+                    className="icon d-flex justify-content-center align-items-center"
+                    key={index}
+                  >
+                    <a href="/#">{item.icon}</a>
                   </div>
                 ))}
               </div>
             </div>
           </Col>
           {linksFooter.map((item, index) => (
-            <Col lg="2" sm="6" className="block__links">
-              <div key={index} className="block__link-title">
+            <Col lg="2" sm="6" className="block__links" key={index}>
+              <div className="block__link-title">
                 <h3>{item.title}</h3>
               </div>
               <ul className="block__items-links">
                 {item.itemsLink.map((item, index) => (
                   <li key={index}>
-                    <a href="#">{item.link}</a>
+                    <a href="/#">{item.link}</a>
                   </li>
                 ))}
               </ul>
@@ -62,7 +66,7 @@ const Footer = () => {
               </p>
             </div>
             <Input />
-            <a href="#" className="block__links-contact">
+            <a href="/#" className="block__links-contact">
               <p>
                 <span>
                   <HiOutlineMail />
