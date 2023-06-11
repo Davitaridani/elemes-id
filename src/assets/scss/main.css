@@ -558,6 +558,9 @@ a {
   .sect__carousel .container .swiper {
     margin-bottom: 40px;
   }
+  .sect__carousel .container .swiper .card__carousel {
+    margin-bottom: 0;
+  }
   .sect__carousel .container .swiper .card__carousel .card__header-carousel img {
     height: 47px;
   }
